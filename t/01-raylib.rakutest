@@ -1,0 +1,18 @@
+use BindGen::C::EZ;
+use Test;
+
+sub relfile (Str $_) {
+    ($?FILE.IO.dirname ~ '/' ~ $_).IO;
+}
+
+my $xml_file = relfile('raylib_api.xml');
+
+my $gen = parse-raylib-xml(input => $xml_file, io => relfile('01-raylib.out.rakumod'));
+
+# my $output = $gen.generate-source();
+
+# ($?FILE.IO.dirname ~ '/01-raylib.out.rakumod').IO.spurt: $output;
+
+pass 'passed';
+
+done-testing;

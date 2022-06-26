@@ -1,0 +1,29 @@
+{
+  "api": "1",
+  "auth": "github:locriacyber",
+  "authors": [
+    "Locria Cyber"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+    "LibXML:auth<zef:dwarring>"
+  ],
+  "description": "C Bindings Generator for Raku",
+  "license": "Artistic-2.0",
+  "name": "BindGen::C::EZ",
+  "perl": "6.c",
+  "provides": {
+    "BindGen::C::EZ": "lib/BindGen/C/EZ.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "git://github.com/locriacyber/raku-bindgen2.git",
+  "tags": [
+    "bindgen",
+    "nativecall"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}
